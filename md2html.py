@@ -50,6 +50,11 @@ templateDef_themewhite = '''
 
 
 def md2html(mdfile, htmlfile, theme):
+    '''
+        mdfile: 需要转换的markdown的完整路径
+        htmlfile: 需要生成html文件的完整路径
+        theme: themes中任选其中一个
+    '''
     # Open input file in read, utf-8 mode
     input_file = codecs.open(mdfile, mode="r", encoding="utf8")
     text = input_file.read()
